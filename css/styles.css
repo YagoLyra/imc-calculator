@@ -1,3 +1,4 @@
+/* Define a margem, padding, box-sizing e fonte padrão para todos os elementos */
 * {
     margin: 0;
     padding: 0;
@@ -5,150 +6,304 @@
     font-family: "Lato", sans-serif;
 }
 
+/* Estiliza o corpo da página */
 body {
     background-color: #090E22;
+    /* Cor de fundo */
     display: flex;
+    /* Define o layout flexível */
     justify-content: center;
+    /* Centraliza horizontalmente */
     align-items: center;
+    /* Centraliza verticalmente */
     height: 100vh;
+    /* Altura da viewport */
     color: #FFF;
+    /* Cor do texto */
 }
 
+/* Classe para esconder elementos */
 .hide {
     display: none !important;
+    /* Esconde o elemento */
 }
 
+/* Estiliza o contêiner principal */
 .container {
     min-width: 400px;
+    /* Largura mínima */
     min-height: 400px;
+    /* Altura mínima */
     background-color: #1D1E33;
+    /* Cor de fundo */
     padding: 2rem;
+    /* Padding interno */
 }
 
+/* Estiliza o título do contêiner de cálculo */
 #calc-container h2 {
     text-align: center;
+    /* Centraliza o texto */
     margin-bottom: 2rem;
+    /* Margem inferior */
 }
 
+/* Estiliza os inputs do formulário */
 .form-inputs {
     display: flex;
+    /* Define o layout flexível */
     flex-direction: column;
+    /* Direção da coluna */
     justify-content: space-between;
+    /* Espaçamento entre os itens */
 }
 
+/* Estiliza os controles do formulário */
 .form-control {
     display: flex;
+    /* Define o layout flexível */
     flex-direction: column;
+    /* Direção da coluna */
     flex: 1;
+    /* Flexível */
     margin-bottom: 1rem;
+    /* Margem inferior */
 }
 
+/* Estiliza os labels dos inputs */
 .form-control label {
     font-weight: bold;
+    /* Negrito */
     margin-bottom: 0.6rem;
+    /* Margem inferior */
     color: #CCC;
+    /* Cor do texto */
 }
 
+/* Estiliza os inputs */
 .form-control input {
     padding: 1rem 0.5rem;
+    /* Padding interno */
 }
 
+/* Estiliza a seção de ações do formulário */
 .actions-control {
     display: flex;
+    /* Define o layout flexível */
     justify-content: space-between;
+    /* Espaçamento entre os itens */
     margin-top: 2rem;
+    /* Margem superior */
     gap: 1rem;
+    /* Espaçamento entre os itens */
 }
 
+/* Estiliza os botões */
 button {
     text-transform: uppercase;
+    /* Texto em maiúsculas */
     padding: 1rem 1.5rem;
+    /* Padding interno */
     background-color: #F44236;
+    /* Cor de fundo */
     border: none;
+    /* Sem borda */
     color: #FFF;
+    /* Cor do texto */
     cursor: pointer;
+    /* Cursor de ponteiro */
     opacity: 0.9;
+    /* Opacidade */
     flex: 1;
+    /* Flexível */
 }
 
+/* Estiliza os botões no estado de hover */
 button:hover {
     opacity: 1;
+    /* Opacidade total */
 }
 
+/* Estiliza o botão de limpar */
 #clear-btn {
     background-color: #444;
+    /* Cor de fundo */
 }
 
+/* Estiliza o contêiner de resultado */
 #result-container {
     text-align: center;
+    /* Centraliza o texto */
     display: flex;
+    /* Define o layout flexível */
     flex-direction: column;
+    /* Direção da coluna */
 }
 
+/* Estiliza o número do IMC */
 #imc-number {
     font-size: 2.4rem;
+    /* Tamanho da fonte */
     margin-bottom: 0.6rem;
+    /* Margem inferior */
 }
 
+/* Estiliza a informação do IMC */
 #imc-info {
     font-size: 1.4rem;
+    /* Tamanho da fonte */
     color: #CCC;
+    /* Cor do texto */
 }
 
+/* Estiliza o cabeçalho do contêiner de resultado */
 #result-container h3 {
     margin-top: 1rem;
+    /* Margem superior */
     color: #DFDFDF;
+    /* Cor do texto */
 }
 
+/* Estiliza a tabela de IMC */
 #imc-table {
     margin: 1.5rem 0;
+    /* Margem superior e inferior */
     font-size: 0.8rem;
+    /* Tamanho da fonte */
 }
 
+/* Estiliza o cabeçalho da tabela */
 .table-header {
     font-weight: bold;
+    /* Negrito */
     color: #CCC;
+    /* Cor do texto */
 }
 
+/* Estiliza as linhas da tabela */
 .table-header,
 .table-data {
     display: flex;
+    /* Define o layout flexível */
     justify-content: space-between;
+    /* Espaçamento entre os itens */
     margin-bottom: 0.5rem;
+    /* Margem inferior */
     padding-bottom: 0.5rem;
+    /* Padding inferior */
     border-bottom: 1px solid #444;
+    /* Borda inferior */
 }
 
+/* Estiliza os itens da tabela */
 .table-header h4,
 .table-data p {
     flex: 1;
+    /* Flexível */
 }
 
+/* Define a largura máxima para o terceiro item da tabela */
 .table-header h4:nth-child(3),
 .table-data p:nth-child(3) {
     max-width: 80px;
+    /* Largura máxima */
 }
 
+/* Estiliza o botão de voltar */
 #back-btn {
     align-self: center;
+    /* Alinha ao centro */
 }
 
+/* Estiliza a classe "good" */
 .good {
     color: #12DB34;
+    /* Cor do texto */
 }
 
+/* Estiliza a classe "low" */
 .low {
     color: #DBCE12;
+    /* Cor do texto */
 }
 
+/* Estiliza a classe "medium" */
 .medium {
     color: #DB6212;
+    /* Cor do texto */
 }
 
+/* Estiliza a classe "high" */
 .high {
     color: #DB1912;
+    /* Cor do texto */
 }
 
+/* Estiliza a classe "very-high" */
 .very-high {
     color: #DB1912;
+    /* Cor do texto */
+}
+
+/* Responsividade */
+
+/* Estiliza para telas com largura máxima de 375px */
+@media (max-width: 375px) {
+    .container {
+        min-width: 100%;
+        /* Largura mínima */
+        min-height: 100%;
+        /* Altura mínima */
+        padding: 0.5rem;
+        /* Padding interno */
+    }
+
+    .form-inputs {
+        flex-direction: column;
+        /* Direção da coluna */
+    }
+
+    .form-control {
+        margin-bottom: 0.5rem;
+        /* Margem inferior */
+    }
+
+    .actions-control {
+        flex-direction: column;
+        /* Direção da coluna */
+        gap: 0.5rem;
+        /* Espaçamento entre os itens */
+    }
+
+    button {
+        padding: 0.6rem 0.8rem;
+        /* Padding interno */
+    }
+
+    #imc-number {
+        font-size: 1.8rem;
+        /* Tamanho da fonte */
+    }
+
+    #imc-info {
+        font-size: 1rem;
+        /* Tamanho da fonte */
+    }
+
+    #imc-table {
+        font-size: 0.6rem;
+        /* Tamanho da fonte */
+    }
+
+    .table-header h4,
+    .table-data p {
+        font-size: 0.7rem;
+        /* Tamanho da fonte */
+    }
+
+    .table-header h4:nth-child(3),
+    .table-data p:nth-child(3) {
+        max-width: 50px;
+        /* Largura máxima */
+    }
 }

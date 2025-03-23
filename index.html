@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora IMC</title>
+    <!-- Define a viewport para responsividade -->
+    <title>Calculadora IMC</title> <!-- Título da página -->
     <!-- Importando arquivo de estilos -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link para o arquivo de estilos CSS -->
     <!-- Importando arquivo de script -->
     <script src="js/scripts.js" defer></script>
+    <!-- Link para o arquivo de script JavaScript, carregado de forma assíncrona -->
     <!-- Importando fonte do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconexão com o Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconexão com o Google Fonts com suporte a CORS -->
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> <!-- Link para importar a fonte Lato do Google Fonts -->
 </head>
 
 <body>
-    <div class="container">
-        <div id="calc-container">
-            <h2>Calculadora de IMC</h2>
-            <form id="imc-form">
-                <div class="form-inputs">
-                    <div class="form-control">
-                        <label for="height">Altura: </label>
+    <div class="container"> <!-- Contêiner principal -->
+        <div id="calc-container"> <!-- Contêiner de cálculo -->
+            <h2>Calculadora de IMC</h2> <!-- Título do contêiner de cálculo -->
+            <form id="imc-form"> <!-- Formulário de cálculo de IMC -->
+                <div class="form-inputs"> <!-- Div para agrupar os inputs do formulário -->
+                    <div class="form-control"> <!-- Controle do formulário para a altura -->
+                        <label for="height">Altura: </label> <!-- Rótulo para o campo de altura -->
                         <input type="text" id="height" name="height" placeholder="Altura (m)">
+                        <!-- Campo de entrada de altura -->
                     </div>
-                    <div class="form-control">
-                        <label for="weight">Peso: </label>
+                    <div class="form-control"> <!-- Controle do formulário para o peso -->
+                        <label for="weight">Peso: </label> <!-- Rótulo para o campo de peso -->
                         <input type="text" id="weight" name="weight" placeholder="Peso (kg)">
+                        <!-- Campo de entrada de peso -->
                     </div>
                 </div>
-                <div class="actions-control">
-                    <button id="calc-btn">Calcular</button>
-                    <button id="clear-btn">Limpar</button>
+                <div class="actions-control"> <!-- Div para agrupar os botões de ação -->
+                    <button id="calc-btn">Calcular</button> <!-- Botão de calcular -->
+                    <button id="clear-btn">Limpar</button> <!-- Botão de limpar -->
                 </div>
             </form>
         </div>
-        <div id="result-container" class="hide">
-            <p id="imc-number">Seu IMC: <span></span></p>
-            <p id="imc-info">Sua classificação: <span></span></p>
-            <h3>Confira as classificações</h3>
-            <div id="imc-table">
-                <div class="table-header">
-                    <h4>IMC</h4>
-                    <h4>Classificação</h4>
-                    <h4>Obesidade</h4>
+        <div id="result-container" class="hide"> <!-- Contêiner de resultado, inicialmente escondido -->
+            <p id="imc-number">Seu IMC: <span></span></p> <!-- Parágrafo para exibir o número do IMC -->
+            <p id="imc-info">Sua classificação: <span></span></p> <!-- Parágrafo para exibir a classificação do IMC -->
+            <h3>Confira as classificações</h3> <!-- Cabeçalho para a tabela de classificações -->
+            <div id="imc-table"> <!-- Div para a tabela de classificações de IMC -->
+                <div class="table-header"> <!-- Cabeçalho da tabela -->
+                    <h4>IMC</h4> <!-- Coluna de IMC -->
+                    <h4>Classificação</h4> <!-- Coluna de classificação -->
+                    <h4>Obesidade</h4> <!-- Coluna de obesidade -->
                 </div>
             </div>
-            <button id="back-btn">Voltar</button>
+            <button id="back-btn">Voltar</button> <!-- Botão de voltar -->
         </div>
     </div>
 </body>
